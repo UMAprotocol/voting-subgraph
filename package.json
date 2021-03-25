@@ -1,0 +1,31 @@
+{
+  "name": "voting-subgraph",
+  "version": "1.0.0",
+  "description": "Voting Contract Events Subgraph",
+  "scripts": {
+    "ganache": "ganache-cli -h 0.0.0.0",
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ nicholaspai/uma-voting",
+    "deploy-staging": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ nicholaspai/uma-voting-staging"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UMAprotocol/voting-subgraph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UMAprotocol/voting-subgraph/issues"
+  },
+  "homepage": "https://github.com/UMAprotocol/voting-subgraph#readme",
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.2.5"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
