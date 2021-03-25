@@ -12,7 +12,8 @@ Voting Contract Events Subgraph
 2. Build mapping code: `yarn build`
 - Code generation does not check your mapping code in `src/mapping.ts`. If you want to check that before trying to deploy your subgraph to the Graph Explorer, you can run yarn build and fix any syntax errors that the TypeScript compiler might find.
 
-3. Deploy: `yarn deploy`
+3. Deploy: `yarn deploy --key XXX`
+- Deploys to subgraph described in the `package.json` script command, requires an API key.
 - Learn more [here](https://thegraph.com/docs/deploy-a-subgraph).
 # (WIP) Testing:
 - Run Ganache on localhost:0.0.0.0 so that it is accessible from within Docker and from other machines. 
