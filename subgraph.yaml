@@ -71,8 +71,6 @@ dataSources:
         - name: VotingToken
           file: ./abis/VotingToken.json
       eventHandlers:
-        - event: EncryptedVote(indexed address,indexed uint256,indexed bytes32,uint256,bytes)
-          handler: handleEncryptedVote
         - event: PriceRequestAdded(indexed uint256,indexed bytes32,uint256)
           handler: handlePriceRequestAdded
         - event: PriceResolved(indexed uint256,indexed bytes32,uint256,int256)
@@ -108,8 +106,6 @@ dataSources:
         - name: VotingToken
           file: ./abis/VotingToken.json
       eventHandlers:
-        - event: EncryptedVote(indexed address,indexed uint256,indexed bytes32,uint256,bytes)
-          handler: handleEncryptedVote
         - event: PriceRequestAdded(indexed uint256,indexed bytes32,uint256)
           handler: handlePriceRequestAdded
         - event: PriceResolved(indexed uint256,indexed bytes32,uint256,int256)
@@ -145,15 +141,13 @@ dataSources:
         - name: VotingToken
           file: ./abis/VotingToken.json
       eventHandlers:
-        - event: EncryptedVote(indexed address,indexed uint256,indexed bytes32,uint256,bytes,bytes)
-          handler: handleEncryptedVoteAncillary
         - event: PriceRequestAdded(indexed uint256,indexed bytes32,uint256)
-          handler: handlePriceRequestAddedAncillary
+          handler: handlePriceRequestAdded
         - event: PriceResolved(indexed uint256,indexed bytes32,uint256,int256,bytes)
-          handler: handlePriceResolvedAncillary
+          handler: handlePriceResolved
         - event: RewardsRetrieved(indexed address,indexed uint256,indexed bytes32,uint256,bytes,uint256)
-          handler: handleRewardsRetrievedAncillary
+          handler: handleRewardsRetrieved
         - event: VoteCommitted(indexed address,indexed uint256,indexed bytes32,uint256,bytes)
-          handler: handleVoteCommittedAncillary
+          handler: handleVoteCommitted
         - event: VoteRevealed(indexed address,indexed uint256,indexed bytes32,uint256,int256,bytes,uint256)
-          handler: handleVoteRevealedAncillary
+          handler: handleVoteRevealed

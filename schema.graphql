@@ -177,8 +177,6 @@ type CommittedVote @entity {
 
   round: PriceRequestRound!
 
-  encryptedVoteData: Bytes
-
   voter: User!
 }
 
