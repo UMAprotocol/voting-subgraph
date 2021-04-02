@@ -136,6 +136,8 @@ dataSources:
         - PriceIdentifier
         - Store
       abis:
+        - name: Voting
+          file: ./abis/Voting.json
         - name: VotingAncillary
           file: ./abis/VotingAncillary.json
         - name: VotingToken
@@ -144,10 +146,10 @@ dataSources:
         - event: PriceRequestAdded(indexed uint256,indexed bytes32,uint256)
           handler: handlePriceRequestAdded
         - event: PriceResolved(indexed uint256,indexed bytes32,uint256,int256,bytes)
-          handler: handlePriceResolved
+          handler: handlePriceResolvedAncillary
         - event: RewardsRetrieved(indexed address,indexed uint256,indexed bytes32,uint256,bytes,uint256)
-          handler: handleRewardsRetrieved
+          handler: handleRewardsRetrievedAncillary
         - event: VoteCommitted(indexed address,indexed uint256,indexed bytes32,uint256,bytes)
-          handler: handleVoteCommitted
+          handler: handleVoteCommittedAncillary
         - event: VoteRevealed(indexed address,indexed uint256,indexed bytes32,uint256,int256,bytes,uint256)
-          handler: handleVoteRevealed
+          handler: handleVoteRevealedAncillary

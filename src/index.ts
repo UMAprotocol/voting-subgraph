@@ -9,6 +9,13 @@ export {
 } from "./mappings/voting";
 
 export {
+  handleVoteRevealed as handleVoteRevealedAncillary,
+  handleVoteCommitted as handleVoteCommittedAncillary,
+  handlePriceResolved as handlePriceResolvedAncillary,
+  handleRewardsRetrieved as handleRewardsRetrievedAncillary
+} from "./mappings/votingAncillary";
+
+export {
   handleSupportedIdentifierAdded,
   handleSupportedIdentifierRemoved
 } from "./mappings/identifierWhitelist";

@@ -59,6 +59,14 @@ export function handlePriceRequestAdded(event: PriceRequestAdded): void {
 //  event PriceResolved(uint256 indexed roundId, bytes32 indexed identifier, uint256 time, int256 price);
 
 export function handlePriceResolved(event: PriceResolved): void {
+  log.warning(
+    `Price Resolved params: {}{}{}`, 
+    [
+      event.params.time.toString(),
+      event.params.identifier.toString(),
+      event.params.roundId.toString()
+    ]
+  );
   let requestId = event.params.identifier
     .toString()
     .concat("-")
