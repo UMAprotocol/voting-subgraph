@@ -1,3 +1,6 @@
+# DEPRECATED REPOSITORY
+This repo is discontinued and its subgraph is a package [here](https://github.com/UMAprotocol/subgraphs)
+
 # voting-subgraph
 Voting Contract Events Subgraph
 
